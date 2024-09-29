@@ -1,0 +1,98 @@
+/* Base styles for mobile-first design */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container, .home, .footer, .div11, .div14 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column; /* Stack items on small screens */
+}
+
+.img1, .logo {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+.header-txt, h1, h3, p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.img-8, .img-9, .img-10, .img-11 {
+    max-width: 100%;
+    height: auto;
+}
+
+.white-btn, .pink-btn, .black-btn, .div5-btn {
+    width: auto;
+    padding: 0.5rem 1rem;
+}
+
+/* Media Queries for tablet sizes (768px and above) */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .home {
+        padding: 2rem;
+        justify-content: space-between;
+    }
+
+    .div13 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .div5 {
+        width: 40%;
+    }
+
+    .img-8 {
+        width: 50%;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .div14 {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    h1, h3, p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Queries for desktop sizes (1200px and above) */
+@media (min-width: 1200px) {
+    .header {
+        padding: 1rem 3rem;
+    }
+
+    .img-8, .img-16 {
+        width: 50%;
+    }
+
+    .div5, .context, .footer {
+        width: 45%;
+    }
+
+    .div11, .div12 {
+        font-size: 1.5rem;
+    }
+}
